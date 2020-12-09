@@ -12,15 +12,21 @@ latest=`gh release list | awk '{ print $1 }' | head -1`
 gh release download ${latest}
 tar xvzf notedo-linux-*
 
+# print prev version
 ./notedo version
-
-
 # kill prev version and restart:
+notedopid=`ps -ef | grep notedo | awk '{print $2}' | head -1`
+kill ${notedopid}
+./notedo upgrade
+./notedo version
 ./notedo server --datadir data -p 8081 --daemon
 
 
-
 exit 0
+
+
+# Jenkins Plugin
+https://plugins.jenkins.io/robot/
 
 # install firefox
 

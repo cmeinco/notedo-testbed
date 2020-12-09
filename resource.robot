@@ -32,8 +32,9 @@ Create Collection
     # until bug fixed, click on Root first.
     # Element Should Be Visible    xpath://*[@id="main-app-container-left"]/div[2]/span
     
+    Capture Page Screenshot
     Wait Until Page Contains Element   xpath://*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]
-    #Click Element   //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
+    # Click Element   //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
     Click Button    //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
     Press Keys      None                            BACKSPACE
     Press Keys      None                            BACKSPACE
