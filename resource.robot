@@ -15,7 +15,7 @@ ${MAIN URL}       http://${SERVER}/
 
 *** Keywords ***
 Open Browser To Main Page
-    Open Browser            ${MAIN URL}    ${BROWSER}   headlessfirefox
+    Open Browser            ${MAIN URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed      ${DELAY}
     Capture Page Screenshot
