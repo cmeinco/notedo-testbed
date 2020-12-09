@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 robot --variable BROWSER:Firefox --outputdir results --report report-firefox.html --log log-firefox.log.html --output output-firefox.xml  --noncritical bugs notedo.robot
 # open results/report-firefox.html
 
