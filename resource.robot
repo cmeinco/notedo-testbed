@@ -36,6 +36,7 @@ Create Collection
     #Click Element   //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
     Click Button    //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
     Press Keys      None                            BACKSPACE
+    Press Keys      None                            BACKSPACE
     Input Text      xpath://*[@id="collection-title"]     ${COLLECTION TITLE}     clear=True
     # Press Keys    //*[@id="collection-title"]     RETURN
     # need to sleep for timer to save change
