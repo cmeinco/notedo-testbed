@@ -23,9 +23,9 @@ pipeline {
                 }
                 echo 'hello Robots'
                 sh './setup.sh'
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    sh 'rm dist/*'
-                }
+                // catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                //     sh 'rm dist/*'
+                // }
             }
             post { 
                 success { 
