@@ -1,9 +1,29 @@
 #!/usr/bin/env bash
+### Check if a directory does not exist ###
+if [ ! -d "venv" ] 
+then
+    python3 -m venv venv
+    source venv/bin/activate
 
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-webdrivermanager firefox chrome --linkpath ${VIRTUAL_ENV}/bin
+    pip install -r requirements.txt
+    webdrivermanager firefox chrome --linkpath ${VIRTUAL_ENV}/bin
+fi
+
+if [ ! -d "profile" ] 
+then
+    mkdir profile
+fi
+
+if [ ! -d "results" ] 
+then
+    mkdir results
+fi
+
+if [ -z "$VIRTUAL_ENV" ] 
+then
+	source venv/bin/activate
+fi
+
 # deactivate
 
 # should be a one time thing, then just run notedo upgrade? or maybe download olderone then do upgrade.
