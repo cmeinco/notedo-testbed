@@ -7,10 +7,10 @@ webdrivermanager firefox chrome --linkpath ${VIRTUAL_ENV}/bin
 # deactivate
 
 # should be a one time thing, then just run notedo upgrade? or maybe download olderone then do upgrade.
-gh repo clone elnook/notedo
-latest=`gh release list | awk '{ print $1 }' | head -1`
-gh release download ${latest}
-tar xvzf notedo-linux-*
+#gh repo clone elnook/notedo
+#latest=`gh release list | awk '{ print $1 }' | head -1`
+#gh release download ${latest}
+#tar xvzf notedo-linux-*
 
 # print prev version
 ./notedo version
