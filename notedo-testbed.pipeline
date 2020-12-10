@@ -27,6 +27,7 @@ pipeline {
                 //     sh 'rm dist/*'
                 // }
                 // wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+                // dpkg -i google-chrome*.deb
                 // google-chrome-stable -version
                 // google-chrome-stable --headless --disable-gpu --print-to-pdf https://gf.dev/
                 // google-chrome-stable --headless --disable-gpu --print-to-pdf https://www.chromestatus.com/

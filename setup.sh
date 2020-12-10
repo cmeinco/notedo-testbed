@@ -15,11 +15,11 @@ tar xvzf notedo-linux-*
 # print prev version
 ./notedo version
 # kill prev version and restart:
-notedopid=`ps -ef | grep notedo | awk '{print $2}' | head -1`
-kill ${notedopid}
-./notedo upgrade
-./notedo version
-./notedo server --datadir data -p 8081 --daemon
+#notedopid=`ps -ef | grep notedo | awk '{print $2}' | head -1`
+#kill ${notedopid}
+#./notedo upgrade
+#./notedo version
+# ./notedo server --datadir data -p 8081 --daemon 
 
 
 exit 0
