@@ -70,7 +70,8 @@ Delete Collection
 
     # be on the collection first?  (do we need to delete all notes first?)
     Click Element                       left nav collection div
-    Mouse Out                           xpath://*[@id="main-app-container-left"]
+    # Mouse Out                           xpath://*[@id="main-app-container-left"]
+    Mouse Over                          xpath://*[@id="collection-title"]
     Element Should Not Be Visible       trashcan
     Mouse Over                          left nav collection div
 
