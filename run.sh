@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 set -x
-
+rm -rf profile
+mkdir profile
 firefox --headless --screenshot --window-size=1024,768 --profile ./profile http://localhost:8081 
 
 source venv/bin/activate
