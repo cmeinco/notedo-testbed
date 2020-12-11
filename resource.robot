@@ -28,14 +28,15 @@ Create Collection
     [Arguments]     ${COLLECTION TITLE}
     Go To           ${MAIN URL}
     Main Page Should Be Open
-    # Pending Bug: Open Collection        Root
+    # Pending Bug: Open Collection        
+    # Root   (Not root any more, should be "Collections")
     # until bug fixed, click on Root first.
     # Element Should Be Visible    xpath://*[@id="main-app-container-left"]/div[2]/span
     
     Capture Page Screenshot
-    Wait Until Page Contains Element   xpath://*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]
-    # Click Element   //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
-    Click Button    //*[@id="main-app-container-left"]/div/span[contains(text(), "Root")]/parent::div/button
+    Wait Until Page Contains Element   xpath://*[@id="main-app-container-left"]/div/span[contains(text(), "Collections")]
+    # Click Element   //*[@id="main-app-container-left"]/div/span[contains(text(), "Collections")]/parent::div/button
+    Click Button    //*[@id="main-app-container-left"]/div/span[contains(text(), "Collections")]/parent::div/button
     Press Keys      None                            BACKSPACE
     Press Keys      None                            BACKSPACE
     Input Text      xpath://*[@id="collection-title"]     ${COLLECTION TITLE}     clear=True
